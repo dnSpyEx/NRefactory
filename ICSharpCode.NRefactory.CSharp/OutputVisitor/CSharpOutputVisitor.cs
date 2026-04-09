@@ -1499,6 +1499,7 @@ namespace ICSharpCode.NRefactory.CSharp {
 			DebugExpression(queryFromClause);
 			StartNode(queryFromClause);
 			WriteKeyword(QueryFromClause.FromKeywordRole);
+			Space();
 			queryFromClause.Type.AcceptVisitor(this);
 			Space();
 			WriteIdentifier(queryFromClause.IdentifierToken);
